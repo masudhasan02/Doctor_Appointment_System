@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Pay</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:  #f5f5f5;
+            }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        .ima{
+            width: 50px;
+        }
+        .ima_t{
+            width: 80%;
+        }
+        .image{
+            flex: left;
+        }
+        li{
+            float: left;
+        }
+        li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+        li a:hover{
+                background-color: #111;
+            }
+        input{
+            width: 30%;
+            height: 30px;
+        }
+        .info, .info_t{
+            width: 50%;
+            float: left;
+        }
+        .card{
+            margin: 20px;
+            padding: 5%;
+            padding-bottom: 2%;
+            box-shadow: 2px 2px 2px 2px;
+            font-weight: bolder;
+            border-radius: 10px;
+            background-color: white;
+        }
+        div{
+            outline: 2px solid invisible;
+        }
+        .code{
+            margin-bottom: 10%;
+        }
+        button{
+            width: 30%;
+            background-color:#333333e1;
+            color: white;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        .r_o{
+            padding: 5%;
+            padding-left: 20%;
+            padding-top: 10%;
+        }
+        .image{
+            float: left;
+            width: 30%;
+            height: 300px;
+        }
+        .txt{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="nav-list">
+        <li class="nav-list-item"><img class="ima" src="sam.jpg" alt="logo"></li> <!--/web/images/QD.png-->
+        <li class="nav-list-item"><a href="#">Find Doctor</a></li>
+        <li class="nav-list-item"><a href="#">Payment</a></li>
+        <li class="nav-list-item"><a href="#">Site Map</a></li>
+        <li class="nav-list-item"><a href="#">About Us</a></li>
+        <li class="nav-list-item"><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    <div class="r_o">
+        <div class="image">
+            <img class="ima_t" src="http://cdn.ebaumsworld.com/mediaFiles/picture/1733067/81853311.png" alt="QR" srcset="">
+        </div>
+        <div class="txt">
+            Scan the QR code using any UPI app on your phone.
+            <p>QR code is valid for <span><u>3</u></span> minutes</p>
+            <label>Pay With UPI ID/Mobile Number</label>
+            <p><input type="number" name="num" id="" placeholder="*******891"></p>
+            <p>Or</p>
+            <p><input type="text" name="id" id="" placeholder="trish2083@gaym"></p>
+        </div>
+        
+        <p><button>Pay Now</p></button>
+    </div>
+
+</body>
+</html>
